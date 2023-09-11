@@ -47,13 +47,13 @@ if(LINUX)
     #Install the shared/dynamic lib.
     if(CMAKE_LIB_SHARED)
         install(TARGETS ${PROJECT_NAME} DynamicStreamInterface
-            ARCHIVE DESTINATION /usr/lib
-            LIBRARY DESTINATION /usr/lib
-            PUBLIC_HEADER DESTINATION /usr/include/novatel/edie/hw_interface/stream_interface)
+            ARCHIVE DESTINATION usr/lib
+            LIBRARY DESTINATION usr/lib
+            PUBLIC_HEADER DESTINATION usr/include/novatel/edie/hw_interface/stream_interface)
     else()
         install(TARGETS ${PROJECT_NAME}
-            ARCHIVE DESTINATION /usr/lib
-            LIBRARY DESTINATION /usr/lib
-            PUBLIC_HEADER DESTINATION /usr/include/novatel/edie/hw_interface/stream_interface)
+            ARCHIVE DESTINATION usr/lib
+            LIBRARY DESTINATION usr/lib
+            PUBLIC_HEADER DESTINATION usr/include/novatel/edie/hw_interface/stream_interface)
     endif()
 endif()
